@@ -1,0 +1,10 @@
+*.elf
+*.hex
+*.bin
+*.o
+*.map
+*.lss
+*.sym
+*.size
+*.su
+.vscode/*.DB*

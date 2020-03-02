@@ -1,0 +1,37 @@
+{
+    "env": {
+        "project-includes": [
+            "${workspaceFolder}/system/inc",
+            "${workspaceFolder}/src/inc",
+            "${workspaceFolder}/embedded/mcu/inc",
+            "${workspaceFolder}/embedded/sensor/inc",
+            "${workspaceFolder}/embedded/device/inc",
+            "${workspaceFolder}/../../programs/arm-gcc/arm-none-eabi/include"
+        ],
+        "arm-gcc": "${workspaceFolder}/../../programs/arm-gcc/bin"
+    },
+    "configurations": [
+        {
+            "name": "Embedded",
+            "intelliSenseMode": "gcc-x86",
+            "includePath": [
+                "${project-includes}"
+            ],
+            "defines": [
+                "STM32F103xB",
+                "__forceinline=\"__attribute__((always_inline))\""
+            ],
+            "compilerPath": "${arm-gcc}",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "${workspaceFolder}/.vscode/temp.db"
+            }
+        }
+    ],
+    "version": 4
+}
